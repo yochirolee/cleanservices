@@ -146,7 +146,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
               {dict.hero.quote}
             </motion.a>
             <motion.a
-              href="#prod"
+              href="#services"
               className="text-sm font-semibold hover:text-yellow-200 text-white hover:underline"
               initial={{ opacity: 0, y: 20 }}
               animate={linksControls}
