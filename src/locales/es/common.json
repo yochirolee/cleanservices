@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "work": "Nuestro Trabajo",
+    "services": "Servicios",
+    "about": "Acerca de Nosotros",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contáctanos"
+  },
+  "hero": {
+  "headline": "Servicios de Limpieza Profesionales en los que Puedes Confiar",
+  "subtext": "En Sarasota, Daxia Clean ofrece limpieza residencial y comercial con enfoque ecológico, atención al detalle y puntualidad garantizada.",
+  "quote": "Solicita tu Cotización Gratis",
+  "view": "Descubre Nuestros Servicios"
+  },
+  "offerSection": {
+    "headline": "Nuestro",
+    "headline2": "Trabajo"
+  },
+  "socialProof": {
+  "title": "Explora nuestros increíbles",
+  "title2": "Servicios",
+  "services": [
+    {
+      "title": "Limpieza Residencial",
+      "description": "Servicios completos para hogares: baños, cocinas, salas y más."
+    },
+    {
+      "title": "Limpieza Comercial",
+      "description": "Oficinas, tiendas y espacios corporativos impecables."
+    },
+    {
+      "title": "Limpieza de Ventanas",
+      "description": "Vidrios brillantes, sin manchas ni rayas."
+    },
+    {
+      "title": "Limpieza Profunda",
+      "description": "Desinfección y detallado completo para una limpieza extrema."
+    },
+    {
+      "title": "Limpieza de Baños",
+      "description": "Higiene garantizada en baños y sanitarios."
+    },
+    {
+      "title": "Aspirado de Alfombras",
+      "description": "Eliminación de polvo, ácaros y suciedad en profundidad."
+    },
+    {
+      "title": "Limpieza Ecológica",
+      "description": "Uso de productos amigables con el medio ambiente."
+    }
+  ]
+},
+"whyChooseUs": {
+  "title": "¿Por qué elegirnos?",
+  "headline": "Limpieza excepcional, cada vez",
+  "description": "En Daxia Clean ofrecemos servicios profesionales de limpieza en Sarasota, garantizando hogares y negocios impecables con atención personalizada y un cuidado inigualable en cada detalle.",
+  "features": [
+    {
+      "name": "Equipo de limpieza experto",
+      "description": "Nuestros profesionales capacitados utilizan productos y técnicas de alta calidad para resultados excepcionales."
+    },
+    {
+      "name": "Servicio minucioso y confiable",
+      "description": "Limpiamos cada rincón con esmero, dejando tu espacio fresco, desinfectado y acogedor."
+    },
+    {
+      "name": "Planes de limpieza personalizados",
+      "description": "Horarios flexibles y paquetes adaptados a tus necesidades y presupuesto."
+    }
+  ]
+},
+"howItWorks": {
+  "title": "Cómo",
+  "title2": "Funciona",
+  "steps": [
+    {
+      "title": "1. Solicita tu Cotización Gratis",
+      "description": "Cuéntanos tus necesidades de limpieza — residencial o comercial — y recibe un presupuesto sin compromiso."
+    },
+    {
+      "title": "2. Programa tu Servicio",
+      "description": "Elige día y hora que más te convenga; nos adaptamos a tu agenda para mayor comodidad."
+    },
+    {
+      "title": "3. Disfruta de un Espacio Impecable",
+      "description": "Nuestro equipo llega puntual, trabaja con productos ecológicos y deja tu hogar u oficina reluciente."
+    }
+  ]
+},
+"about": {
+  "title": "Acerca de Nosotros",
+  "description": "En ",
+  "description2": "Daxia Clean",
+  "description3": " ofrecemos servicios de limpieza profesional con compromiso, detalle y confianza. Con años de experiencia en limpieza residencial y comercial en Sarasota, nos dedicamos a crear espacios impecables y saludables para ti y tu familia o negocio. Desde limpiezas profundas hasta mantenimiento regular, nuestro equipo trabaja con productos ecológicos y técnicas eficientes para garantizar tu satisfacción. Contáctanos hoy y descubre cómo podemos transformar tu espacio con limpieza de alta calidad.",
+  "stats": [
+    { "name": "Clientes Satisfechos", "value": "300+" },
+    { "name": "Servicios Completados", "value": "250+" },
+    { "name": "Limpiezas Regulares", "value": "150+" },
+    { "name": "Años de Experiencia", "value": "8+" }
+  ]
+  },
+"faq": {
+  "label": "Preguntas Frecuentes",
+  "title1": "Preguntas",
+  "title2": "Frecuentes",
+  "questions": [
+    {
+      "q": "¿Cómo puedo solicitar una cotización gratuita?",
+      "a": "Puedes solicitar una cotización gratuita llamando al (941) 879-4806."
+    },
+    {
+      "q": "¿Atienden en mi área?",
+      "a": "Servimos con orgullo Sarasota y las áreas cercanas. Contáctanos para confirmar disponibilidad en tu ubicación."
+    },
+    {
+      "q": "¿Cuánto cuesta contratar a una persona para limpiar?",
+      "a": "El precio varía según el tamaño del espacio y el tipo de limpieza. Contáctanos para una cotización personalizada."
+    },
+    {
+      "q": "¿Puede venir alguien hoy mismo?",
+      "a": "El servicio el mismo día puede estar disponible según el horario. Por favor, contáctanos para verificar."
+    },
+    {
+      "q": "¿Debo estar presente durante la limpieza?",
+      "a": "No es necesario, pero recomendamos estar al principio o al final para hablar sobre detalles importantes."
+    },
+    {
+      "q": "¿Debo proporcionar los productos de limpieza?",
+      "a": "¡Es opcional! La mayoría de los profesionales llevan sus propios productos. Si tienes preferencias (por ejemplo, sin cloro o productos orgánicos), menciónalo en tu solicitud."
+    },
+    {
+      "q": "¿Cuál es la diferencia entre una limpieza profunda y una estándar?",
+      "a": "La limpieza estándar es mantenimiento regular. La limpieza profunda es más detallada y cubre áreas difíciles como debajo de los electrodomésticos o detrás de los muebles."
+    },
+    {
+      "q": "¿Cuánto tiempo tarda la limpieza de alfombras?",
+      "a": "Generalmente toma entre 1 y 3 horas por habitación. El tiempo de secado varía entre 6 y 12 horas y no está incluido en la duración del servicio."
+    }
+  ]
+},
+"secondaryCTA": {
+  "title1": "Haz que tu hogar",
+  "title2": "Brille",
+  "description": "Limpieza profesional que se adapta a tu horario y deja tu espacio impecable — a un precio justo.",
+  "button": "Agendar limpieza hoy"
+},
+"footer": {
+  "subheading": "Ofrecemos servicios de limpieza confiables y profesionales para tu hogar u oficina.",
+  "quickLinksTitle": "Enlaces Rápidos",
+  "addressLabel": "Dirección",
+  "hoursLabel": "Horario",
+  "emailLabel": "Correo Electrónico",
+  "phoneLabel": "Teléfono",
+  "contactTitle": "Contáctanos",
+  "copyright": "Todos los derechos reservados."
+},
+"checkout": {
+  "title": "Pagar ahora",
+  "description": "Revisa tu orden antes de completar el pago.",
+  "product": "Producto",
+  "quantity": "Cantidad",
+  "total": "Total",
+  "pay": "Proceder al pago"
+},
+"success": {
+  "title": "Pago exitoso",
+  "message": "Gracias por tu compra. Se ha recibido tu pago correctamente.",
+  "continue": "Volver al inicio"
+},
+"error": {
+  "title": "Error en el pago",
+  "message": "Hubo un problema al procesar tu pago. Inténtalo nuevamente.",
+  "retry": "Reintentar",
+  "home": "Inicio"
+}
+}
