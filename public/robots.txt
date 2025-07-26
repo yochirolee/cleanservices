@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cleanservices.vercel.app/en
+
+# Sitemaps
+Sitemap: https://cleanservices.vercel.app/en/sitemap.xml

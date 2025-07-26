@@ -12,7 +12,7 @@ export async function generateMetadata(props: {
   const { locale } = await props.params;
   const metadataByLocale = {
     es: {
-    title: "Servicios de Limpieza en Sarasota - Daxia Clean Services | Limpieza Residencial y Comercial",
+    title: "Servicios de Limpieza en Sarasota | Daxia Clean",
     description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más. ¡Calidad, confianza y eficiencia!",
     keywords: [
       "servicios de limpieza Sarasota",
@@ -31,7 +31,7 @@ export async function generateMetadata(props: {
         },
       },
       openGraph: {
-        title: "Servicios de Limpieza en Sarasota - Daxia Clean Services | Limpieza Residencial y Comercial",
+        title: "Servicios de Limpieza en Sarasota | Daxia Clean",
         description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
         url: "https://landscapingproy.vercel.app/",
         siteName: "Daxia Clean Services",
@@ -47,13 +47,13 @@ export async function generateMetadata(props: {
       },
       twitter: {
         card: "summary_large_image",
-        title: "Servicios de Limpieza en Sarasota - Daxia Clean Services | Limpieza Residencial y Comercial",
+        title: "Servicios de Limpieza en Sarasota | Daxia Clean",
         description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
         images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
       },
     },
     en: {
-    title: "Cleaning Services in Sarasota - Daxia Clean Services | Residential & Commercial Cleaning",
+    title: "Cleaning Services Sarasota | Daxia Clean",
     description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions. Quality and trust guaranteed!",
     keywords: [
       "cleaning services Sarasota",
@@ -72,7 +72,7 @@ export async function generateMetadata(props: {
         },
       },
       openGraph: {
-        title: "Cleaning Services in Sarasota - Daxia Clean Services | Residential & Commercial Cleaning",
+        title: "Cleaning Services Sarasota | Daxia Clean",
         description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions.",
         url: "https://landscapingproy.vercel.app/",
         siteName: "Daxia Clean Services",
@@ -88,7 +88,7 @@ export async function generateMetadata(props: {
       },
       twitter: {
         card: "summary_large_image",
-        title: "Cleaning Services in Sarasota - Daxia Clean Services | Residential & Commercial Cleaning",
+        title: "Cleaning Services Sarasota | Daxia Clean",
         description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions.",
         images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
       },
