@@ -5,6 +5,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LanguageSwitcher from './LanguageSwitcher'
+import Link from 'next/link'
 
 type NavDict = {
   work: string
@@ -49,17 +50,18 @@ export default function HeroSection({ dict }: { dict: Dict }) {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
+            <Link href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
               <motion.img
-                src="/nika-logo-blanco.png"
+                src="/nika-logo.png"
                 alt="Nika LLC Cleaning Services"
                 className="w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-auto"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               />
-            </a>
+            </Link>
           </div>
+
           <div className="flex lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -69,11 +71,12 @@ export default function HeroSection({ dict }: { dict: Dict }) {
             </button>
             <LanguageSwitcher />
           </div>
+
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item, i) => (
               <motion.a
                 key={item.name}
-                href={item.href}
+                href={item.href} // hash links: OK con <a>
                 className="text-sm font-semibold text-white hover:text-[#333333] transition-colors text-base"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.6 + i * 0.1 } }}
@@ -84,16 +87,19 @@ export default function HeroSection({ dict }: { dict: Dict }) {
             <LanguageSwitcher />
           </div>
         </nav>
+
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-white p-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
-              <a href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
+              {/* ⬇️ Cambiado a Link */}
+              <Link href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <img
                   src="/nika-logo-azul.png"
                   alt="Nika LLC Cleaning Services"
                   className="w-12 sm:w-14 md:w-16 h-auto"
                 />
-              </a>
+              </Link>
+
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="-m-2.5 rounded-md p-2.5 text-sky-900"
@@ -101,24 +107,25 @@ export default function HeroSection({ dict }: { dict: Dict }) {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
+
             <div className="mt-6 space-y-2">
               {navigation.map((item) => (
                 <a
                   key={item.name}
-                  href={item.href}
+                  href={item.href} // hash links: OK con <a>
                   onClick={() => setMobileMenuOpen(false)}
                   className="block rounded-lg px-3 py-2 text-base font-semibold text-sky-900 hover:bg-sky-50"
                 >
                   {item.name}
                 </a>
               ))}
+
               <a
-                href="tel:5025338342"
+                href="tel:5025338342" // externo: OK con <a>
                 className="block rounded-lg px-3 py-2 text-base font-semibold text-sky-900 hover:bg-sky-50"
               >
                 {dict.hero.quote}
               </a>
-
             </div>
           </DialogPanel>
         </Dialog>
@@ -133,13 +140,15 @@ export default function HeroSection({ dict }: { dict: Dict }) {
           >
             {dict.hero.headline}
           </motion.h1>
+
           <motion.p
-            className="mt-6 text-lg "
+            className="mt-6 text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={textControls}
           >
             {dict.hero.subtext}
           </motion.p>
+
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <motion.a
               href="tel:5025338342"
@@ -149,6 +158,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
             >
               {dict.hero.quote}
             </motion.a>
+
             <motion.a
               href="#services"
               className="text-sm font-semibold hover:text-yellow-200 text-white hover:underline"
