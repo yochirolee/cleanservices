@@ -10,31 +10,34 @@ export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await props.params;
+
   const metadataByLocale = {
     es: {
-    title: "Servicios de Limpieza en Sarasota | Daxia Clean",
-    description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más. ¡Calidad, confianza y eficiencia!",
-    keywords: [
-      "servicios de limpieza Sarasota",
-      "limpieza profesional Sarasota",
-      "limpieza residencial Sarasota",
-      "limpieza comercial Sarasota",
-      "limpieza profunda Sarasota",
-      "empresa de limpieza en Florida",
-      "mantenimiento de oficinas Sarasota",
-      "Daxia Clean Services",
-      "limpieza confiable Sarasota"
-    ],
+      title: "Servicios de Limpieza en Louisville | Nika Llc",
+      description:
+        "Empresa de limpieza profesional en Louisville, KY. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más. ¡Calidad, confianza y eficiencia!",
+      keywords: [
+        "servicios de limpieza Louisville",
+        "limpieza profesional Louisville",
+        "limpieza residencial Louisville",
+        "limpieza comercial Louisville",
+        "limpieza profunda Louisville",
+        "empresa de limpieza en Kentucky",
+        "mantenimiento de oficinas Louisville",
+        "Nika Llc",
+        "limpieza confiable Louisville"
+      ],
       alternates: {
         languages: {
           en: "/en",
         },
       },
       openGraph: {
-        title: "Servicios de Limpieza en Sarasota | Daxia Clean",
-        description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
+        title: "Servicios de Limpieza en Louisville | Nika Llc",
+        description:
+          "Empresa de limpieza profesional en Louisville, KY. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
         url: "https://landscapingproy.vercel.app/",
-        siteName: "Daxia Clean Services",
+        siteName: "Nika Llc",
         images: [
           {
             url: "https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp",
@@ -47,35 +50,38 @@ export async function generateMetadata(props: {
       },
       twitter: {
         card: "summary_large_image",
-        title: "Servicios de Limpieza en Sarasota | Daxia Clean",
-        description: "Empresa de limpieza profesional en Sarasota. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
+        title: "Servicios de Limpieza en Louisville | Nika Llc",
+        description:
+          "Empresa de limpieza profesional en Louisville, KY. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
         images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
       },
     },
     en: {
-    title: "Cleaning Services Sarasota | Daxia Clean",
-    description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions. Quality and trust guaranteed!",
-    keywords: [
-      "cleaning services Sarasota",
-      "professional cleaning Sarasota",
-      "residential cleaning Sarasota",
-      "commercial cleaning Sarasota",
-      "deep cleaning Sarasota",
-      "cleaning company Florida",
-      "office maintenance Sarasota",
-      "Daxia Clean Services",
-      "reliable cleaning Sarasota"
-    ],
+      title: "Cleaning Services in Louisville | Nika Llc",
+      description:
+        "Professional cleaning company in Louisville, KY offering deep cleaning, home and office maintenance, and reliable solutions. Quality and trust guaranteed!",
+      keywords: [
+        "cleaning services Louisville",
+        "professional cleaning Louisville",
+        "residential cleaning Louisville",
+        "commercial cleaning Louisville",
+        "deep cleaning Louisville",
+        "cleaning company Kentucky",
+        "office maintenance Louisville",
+        "Nika Llc",
+        "reliable cleaning Louisville"
+      ],
       alternates: {
         languages: {
           es: "/",
         },
       },
       openGraph: {
-        title: "Cleaning Services Sarasota | Daxia Clean",
-        description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions.",
+        title: "Cleaning Services in Louisville | Nika Llc",
+        description:
+          "Professional cleaning company in Louisville, KY offering deep cleaning, home and office maintenance, and reliable solutions.",
         url: "https://landscapingproy.vercel.app/",
-        siteName: "Daxia Clean Services",
+        siteName: "Nika Llc",
         images: [
           {
             url: "https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp",
@@ -88,8 +94,9 @@ export async function generateMetadata(props: {
       },
       twitter: {
         card: "summary_large_image",
-        title: "Cleaning Services Sarasota | Daxia Clean",
-        description: "Professional cleaning company in Sarasota offering deep cleaning, home and office maintenance, and reliable cleaning solutions.",
+        title: "Cleaning Services in Louisville | Nika Llc",
+        description:
+          "Professional cleaning company in Louisville, KY offering deep cleaning, home and office maintenance, and reliable solutions.",
         images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
       },
     },
@@ -103,9 +110,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;  // params es una promesa
+  params: Promise<{ locale: string }>; // params es una promesa
 }) {
-  const { locale } = await params;  // espera la promesa
+  const { locale } = await params; // espera la promesa
 
   return (
     <html lang={locale}>
@@ -115,8 +122,8 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          {children}
-          <Toaster position="top-right" />
+        {children}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

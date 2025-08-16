@@ -19,7 +19,7 @@ export type Dict = {
   about: { title: string; description: string; description2: string; description3: string; stats: { name: string; value: string; }[] }
   faq: { label: string; title1: string; title2: string; questions: { q: string; a: string; }[] }
   secondaryCTA: { title1: string; title2: string; description: string; button: string }
-  footer: { subheading: string; quickLinksTitle: string; addressLabel: string; hoursLabel: string; emailLabel: string; phoneLabel: string; contactTitle: string; copyright: string }
+  footer: { subheading: string; quickLinksTitle: string; addressLabel: string; hoursLabel: string; emailLabel: string; phoneLabel: string; contactTitle: string; copyright: string; hours: string }
 
   checkout: {
     title: string;

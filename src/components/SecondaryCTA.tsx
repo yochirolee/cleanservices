@@ -48,7 +48,7 @@ export default function SecondaryCTA({ dict }: Props) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="tel:9418794806"
+                href="tel:5025338342"
                 className="rounded-md bg-white px-5 py-3 text-sm font-semibold text-[#0078A0] shadow-md hover:bg-yellow-200 transition"
               >
                 {dict.secondaryCTA.button}
