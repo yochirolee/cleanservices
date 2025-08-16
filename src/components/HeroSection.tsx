@@ -52,7 +52,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
           <div className="flex lg:flex-1">
             <Link href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
               <motion.img
-                src="/nika-logo.png"
+                src="/nika-logo-blanco.png"
                 alt="Nika LLC Cleaning Services"
                 className="w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-auto"
                 initial={{ opacity: 0, y: -10 }}
