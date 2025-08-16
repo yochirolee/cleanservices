@@ -36,11 +36,11 @@ export async function generateMetadata(props: {
         title: "Servicios de Limpieza en Louisville | Nika Llc",
         description:
           "Empresa de limpieza profesional en Louisville, KY. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
-        url: "https://landscapingproy.vercel.app/",
+        url: "https://cleanservices.vercel.app/",
         siteName: "Nika Llc",
         images: [
           {
-            url: "https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp",
+            url: "https://cleanservices.vercel.app/glass-clean.jpeg",
             width: 1200,
             height: 630,
           },
@@ -53,7 +53,7 @@ export async function generateMetadata(props: {
         title: "Servicios de Limpieza en Louisville | Nika Llc",
         description:
           "Empresa de limpieza profesional en Louisville, KY. Ofrecemos limpieza profunda, mantenimiento del hogar, oficinas y más.",
-        images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
+        images: ["https://cleanservices.vercel.app/glass-clean.jpeg"],
       },
     },
     en: {
@@ -80,11 +80,11 @@ export async function generateMetadata(props: {
         title: "Cleaning Services in Louisville | Nika Llc",
         description:
           "Professional cleaning company in Louisville, KY offering deep cleaning, home and office maintenance, and reliable solutions.",
-        url: "https://landscapingproy.vercel.app/",
+        url: "https://cleanservices.vercel.app/",
         siteName: "Nika Llc",
         images: [
           {
-            url: "https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp",
+            url: "https://cleanservices.vercel.app/glass-clean.jpeg",
             width: 1200,
             height: 630,
           },
@@ -97,7 +97,7 @@ export async function generateMetadata(props: {
         title: "Cleaning Services in Louisville | Nika Llc",
         description:
           "Professional cleaning company in Louisville, KY offering deep cleaning, home and office maintenance, and reliable solutions.",
-        images: ["https://landscapingproy.vercel.app/Additional-dusting-tips-scaled.webp"],
+        images: ["https://cleanservices.vercel.app/glass-clean.jpeg"],
       },
     },
   };
