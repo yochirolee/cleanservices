@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const siteDetails = {
   siteName: "Nika LLC",
-  logoSrc: "/logoazul.jpeg",
+  logoSrc: "/nika-logo-blanco.png",
 };
 
 const footerDetails = {
@@ -83,13 +83,17 @@ const Footer: React.FC<{ dict: Dict }> = ({ dict }) => {
             <Image
               src={siteDetails.logoSrc}
               alt={`${siteDetails.siteName} Logo`}
-              width={80}
-              height={80}
-              className="rounded-xl object-contain"
+              width={64}
+              height={64}
+              className="object-contain"
             />
-            <h3 className="text-2xl font-semibold cursor-pointer text-white">{siteDetails.siteName}</h3>
+            <h3 className="text-xl font-semibold cursor-pointer text-white">
+              {siteDetails.siteName}
+            </h3>
           </Link>
-          <p className="mt-4 text-lg font-light max-w-sm text-[#BEE3F8]">{f.subheading}</p>
+          <p className="mt-3 text-base font-light max-w-sm text-[#BEE3F8]">
+            {f.subheading}
+          </p>
         </div>
 
         {/* Quick Links desde dict.nav */}

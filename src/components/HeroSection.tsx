@@ -49,11 +49,11 @@ export default function HeroSection({ dict }: { dict: Dict }) {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
               <motion.img
-                src="/logoazul.jpeg" // Usa aquí el logo nuevo
-                alt="Daxia Clean Services"
-                className="w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20 h-auto rounded-xl"
+                src="/nika-logo-blanco.png"
+                alt="Nika LLC Cleaning Services"
+                className="w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-auto"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -87,8 +87,12 @@ export default function HeroSection({ dict }: { dict: Dict }) {
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-white p-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <img src="/logoazul.jpeg" alt="Daxia Clean Services" className="w-12 sm:w-14 md:w-16 rounded-xl" />
+              <a href="/" aria-label="Nika LLC Home" className="-m-1.5 p-1.5">
+                <img
+                  src="/nika-logo-azul.png"
+                  alt="Nika LLC Cleaning Services"
+                  className="w-12 sm:w-14 md:w-16 h-auto"
+                />
               </a>
               <button
                 onClick={() => setMobileMenuOpen(false)}
@@ -114,7 +118,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
               >
                 {dict.hero.quote}
               </a>
-              
+
             </div>
           </DialogPanel>
         </Dialog>
