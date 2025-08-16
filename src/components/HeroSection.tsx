@@ -138,7 +138,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
           </motion.p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <motion.a
-              href="tel:7864519573"
+              href="tel:5025338342"
               className="rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-sky-700 shadow-sm hover:bg-yellow-200"
               initial={{ opacity: 0, y: 20 }}
               animate={linksControls}
