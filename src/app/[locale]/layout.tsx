@@ -7,13 +7,14 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 const SITE = "https://nikallc.vercel.app";
-const OG_IMAGE = `${SITE}/og.jpg`; // pon aquí tu imagen 1200x630 en /public/og.jpg
+const OG_IMAGE = `${SITE}/og.jpg`; // /public/og.jpg (JPG 1200x630)
 
-export async function generateMetadata(props: {
-  params: Promise<{ locale: string }>;
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
 }): Promise<Metadata> {
-  const { locale } = await props.params;
-
+  const { locale } = params;
   const isES = locale === "es";
   const urlByLocale = isES ? `${SITE}/` : `${SITE}/en`;
 
@@ -24,8 +25,16 @@ export async function generateMetadata(props: {
     openGraph: {
       url: urlByLocale,
       siteName: "Nika Llc",
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Nika Llc - Cleaning Services" }],
       type: "website",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Nika Llc - Cleaning Services",
+          type: "image/jpeg",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -92,14 +101,15 @@ export async function generateMetadata(props: {
   return { ...common, ...(isES ? es : en) };
 }
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
+
   return (
     <html lang={locale}>
       <head>
