@@ -1,8 +1,10 @@
 'use client'
 import React from 'react'
 import { ClipboardCheck, CalendarClock, Truck } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
+
+const ENABLE_ANIMATIONS = true
 
 type Step = {
   title: string
@@ -23,30 +25,36 @@ type Props = {
   dict: Dict
 }
 
-const cardVariants: Variants = {
-  offscreen: { opacity: 0, y: 50 },
+
+const softCardVariants: Variants = {
+  offscreen: { opacity: 0, y: 12 },
   onscreen: {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
-      stiffness: 80,
-      damping: 18,
+      type: 'tween',
+      ease: [0.22, 1, 0.36, 1],
+      duration: 0.45,
     },
   },
 }
 
-const containerVariants = {
+const softContainerVariants = {
   offscreen: {},
   onscreen: {
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.12,
     },
   },
 }
 
 export default function HowItWorks({ dict }: Props) {
   const steps = dict.howItWorks.steps
+  const shouldReduce = useReducedMotion()
+
+  const neutral: Variants = { offscreen: { opacity: 1, y: 0 }, onscreen: { opacity: 1, y: 0 } }
+  const cardVariants = !ENABLE_ANIMATIONS || shouldReduce ? neutral : softCardVariants
+  const containerVariants = !ENABLE_ANIMATIONS || shouldReduce ? neutral : softContainerVariants
 
   const icons = [
     <ClipboardCheck key="clipboard" className="w-10 h-10 text-[#0078A0] mb-4" />,
@@ -66,7 +74,7 @@ export default function HowItWorks({ dict }: Props) {
           className="grid md:grid-cols-3 gap-8 text-gray-800"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
           {steps.map((step, idx) => (

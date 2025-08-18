@@ -51,7 +51,7 @@ export default function WhyChooseUsSection({ dict }: { dict: Dict }) {
             className="lg:pt-4 lg:pr-8"
           >
             <div className="lg:max-w-lg">
-              <h2 className="text-lg font-semibold text-yellow-200">
+              <h2 className="text-lg font-semibold text-white">
                 {dict.whyChooseUs.title}
               </h2>
               <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">

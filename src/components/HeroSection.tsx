@@ -67,7 +67,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
               onClick={() => setMobileMenuOpen(true)}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-sky-950 hover:text-white"
             >
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
             <LanguageSwitcher />
           </div>
