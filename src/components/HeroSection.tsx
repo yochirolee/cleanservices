@@ -54,7 +54,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
               <motion.img
                 src="/nika-logo-blanco.png"
                 alt="Nika LLC Cleaning Services"
-                className="w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-auto"
+                className="w-18 sm:w-18 md:w-20 lg:w-24 xl:w-28 h-auto"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -96,7 +96,7 @@ export default function HeroSection({ dict }: { dict: Dict }) {
                 <img
                   src="/nika-logo-azul.png"
                   alt="Nika LLC Cleaning Services"
-                  className="w-12 sm:w-14 md:w-16 h-auto"
+                  className="w-18 sm:w-18 md:w-16 h-auto"
                 />
               </Link>
 
